@@ -1,0 +1,21 @@
+# Student Requirements - ETL Pipeline Only
+# API and Database are provided via Docker Compose
+
+# HTTP client for API calls
+requests>=2.31.0
+
+# Database adapter for PostgreSQL
+psycopg[binary]>=3.2.0
+
+# Data validation with Pydantic v2
+pydantic>=2.6.0
+
+# Data manipulation
+pandas>=2.2.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# BigQuery integration 
+google-cloud-bigquery>=3.11.0
+db-dtypes>=1.1.1  # Required for BigQuery pandas integration

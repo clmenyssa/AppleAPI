@@ -1,0 +1,21 @@
+# Apple Cloud Cost ETL Pipeline Dependencies
+# Compatible with Python 3.11, 3.12, and 3.13
+
+# Web framework for mock API server
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# HTTP client for API calls
+requests>=2.31.0
+
+# Database adapter for PostgreSQL (3.2+ supports Python 3.13)
+psycopg[binary]>=3.2.0
+
+# Data validation with Pydantic v2 (2.6+ supports Python 3.13)
+pydantic>=2.6.0
+
+# Data manipulation (2.2+ supports Python 3.13)
+pandas>=2.2.0
+
+# Additional dependencies
+python-dotenv>=1.0.0
