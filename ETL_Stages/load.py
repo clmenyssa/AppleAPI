@@ -87,7 +87,7 @@ def upsert_gold_apple_costs(df: pd.DataFrame) -> int:
 
             conn.commit()
 
-        print(f"\nLoad summary:")
+        print("\nLoad summary:")
         print(f"  Inserted: {inserted} new records")
         print(f"  Updated: {updated} existing records")
         print(f"  Total: {len(df)} records")

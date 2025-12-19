@@ -102,7 +102,7 @@ def validate_records(raw_data: list[dict]) -> list[AppleCloudCostRaw]:
     # Business rule: too many failures indicates a systemic problem
     failure_rate = failed_count / len(raw_data) if raw_data else 0
 
-    print(f"\nValidation summary:")
+    print("\nValidation summary:")
     print(f"  Valid: {len(valid_records)}")
     print(f"  Failed: {failed_count}")
     print(f"  Failure rate: {failure_rate:.1%}")
@@ -142,7 +142,7 @@ def load_to_raw(records: list[AppleCloudCostRaw]) -> int:
         print("No records to load")
         return 0
 
-    print(f"\nConnecting to database...")
+    print("\nConnecting to database...")
     print(f"Database: {DATABASE_URL.split('@')[-1] if '@' in DATABASE_URL else DATABASE_URL}")
 
     try:

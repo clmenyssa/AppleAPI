@@ -87,4 +87,3 @@ jobs:
 
       - name: Run Ruff linter
         run: ruff check .
-        continue-on-error: true

@@ -140,7 +140,7 @@ def transform_to_gold(raw_df: pd.DataFrame) -> pd.DataFrame:
             if failed_count <= 5:  # Show first 5 failures
                 print(f"  Row {idx} failed gold validation: {e}")
 
-    print(f"\nTransformation summary:")
+    print("\nTransformation summary:")
     print(f"  Valid: {len(gold_records)}")
     print(f"  Failed: {failed_count}")
     print(f"  Success rate: {len(gold_records) / len(raw_df):.1%}")
